@@ -5,8 +5,8 @@ using UnityEngine;
 public class Move : MonoBehaviour
 {
 
-    void LateUpdate()
+    void FixedUpdate()
     {
-        transform.position += Vector3.forward * 7 * Time.deltaTime;
+        transform.position += Vector3.forward * 7 * Time.fixedDeltaTime;
     }
 }
