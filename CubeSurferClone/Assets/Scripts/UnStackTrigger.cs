@@ -13,10 +13,8 @@ public class UnStackTrigger : MonoBehaviour
 
             transform.parent = null;
 
-            // Duzeltilecek
             // birakilacak olan kupun engelin tam onunde birakilmasini saglar
-            transform.position = other.transform.position + Vector3.back;
-
+            transform.position = other.transform.position + new Vector3(transform.position.x,0,-1);
 
             // Modifiye
             // toplanan kuplerinin nereye yerlestirilecein
