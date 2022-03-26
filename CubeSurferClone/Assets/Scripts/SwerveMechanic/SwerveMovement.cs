@@ -18,7 +18,7 @@ public class SwerveMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        float swerveAmount =Time.fixedDeltaTime * swerveSpeed * _swerveInputSystem.MoveFactoryX;
+        float swerveAmount = Time.fixedDeltaTime * swerveSpeed * _swerveInputSystem.MoveFactoryX;
 
         swerveAmount = Mathf.Clamp(swerveAmount, -maxSwerveAmount, maxSwerveAmount);
 
@@ -30,3 +30,4 @@ public class SwerveMovement : MonoBehaviour
         transform.position = clampedHorizontalPosition;
     }
 }
+
